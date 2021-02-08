@@ -30,6 +30,11 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_VERIFY_USES_LIBRARIES := true
 RELAX_USES_LIBRARY_CHECK := true
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/manifest/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/manifest/compatibility_matrix.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
 BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0x4a90000
