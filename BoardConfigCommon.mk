@@ -103,5 +103,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 
+# Sepolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm6115-common/BoardConfigVendor.mk
