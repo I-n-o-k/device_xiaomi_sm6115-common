@@ -160,6 +160,12 @@ PRODUCT_PACKAGES += \
     libstagefrighthw_foundation \
     libstagefright_omx.vendor
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2 \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power-service-qti
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
