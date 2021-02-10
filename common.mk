@@ -53,6 +53,49 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    vendor.display.config@1.0 \
+    vendor.display.config@1.5 \
+    vendor.display.config@1.11.vendor \
+    vendor.display.config@1.9.vendor \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.allocator@1.0.vendor \
+    vendor.qti.hardware.display.allocator@3.0.vendor \
+    vendor.qti.hardware.display.allocator@4.0.vendor \
+    vendor.qti.hardware.display.composer@1.0.vendor \
+    vendor.qti.hardware.display.composer@2.0.vendor \
+    vendor.qti.hardware.display.composer@3.0.vendor \
+    vendor.qti.hardware.display.mapper@1.0.vendor \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.0.vendor \
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor
+
+PRODUCT_PACKAGES += \
+    memtrack.bengal \
+    gralloc.bengal \
+    hwcomposer.bengal \
+    libdisplayconfig \
+    libqdMetaData \
+    libqdMetaData.system \
+    libsdmcore \
+    libsdmutils \
+    libtinyxml \
+    libtinyxml2
+    
+PRODUCT_PACKAGES += \
+    libvulkan
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
