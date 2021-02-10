@@ -96,6 +96,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4.vendor \
+    android.hardware.drm-service.clearkey
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
