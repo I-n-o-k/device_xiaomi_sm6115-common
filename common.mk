@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
     
+# Lights
+PRODUCT_PACKAGES += \
+    lights.bengal
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
