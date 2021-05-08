@@ -155,6 +155,9 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
+    android.hardware.lights-service.bengal
+    
+PRODUCT_PACKAGES += \
     lights.bengal
 
 # Media
