@@ -244,6 +244,28 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.dcvs.sh \
+    init.qti.media.sh
+
+PRODUCT_PACKAGES += \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.qti.ufs.rc \
+    init.recovery.qcom.rc \
+    init.stnfc.rc \
+    init.target.rc \
+    fstab.qcom \
+    fstab.qcom-ramdisk \
+    ueventd.qcom.rc
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
