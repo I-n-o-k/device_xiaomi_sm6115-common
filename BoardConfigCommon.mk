@@ -129,6 +129,11 @@ TARGET_COPY_OUT_PRODUCT := product
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := bengal
 
+# Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/properties/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
