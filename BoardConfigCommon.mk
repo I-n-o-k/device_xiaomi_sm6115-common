@@ -59,6 +59,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
+# HAL
+TARGET_HALS_PATH ?= hardware/qcom-caf/$(TARGET_BOARD_PLATFORM)
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest/manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
