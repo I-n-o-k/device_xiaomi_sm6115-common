@@ -30,5 +30,35 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 BUILD_BROKEN_VERIFY_USES_LIBRARIES := true
 RELAX_USES_LIBRARY_CHECK := true
 
+# Kernel
+BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
+BOARD_KERNEL_CMDLINE += earlycon=msm_geni_serial,0x4a90000
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
+BOARD_KERNEL_CMDLINE += androidboot.memcg=1
+BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
+BOARD_KERNEL_CMDLINE += service_locator.enable=1
+BOARD_KERNEL_CMDLINE += swiotlb=2048
+BOARD_KERNEL_CMDLINE += loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE += kpti=off
+
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_KERNEL_SECOND_OFFSET := 0xf00000
+BOARD_KERNEL_TAGS_OFFSET := 0x00000100
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_BOOTIMG_HEADER_VERSION := 2
+BOARD_KERNEL_IMAGE_NAME := Image.gz
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6115-common
+TARGET_KERNEL_CONFIG := vendor/xiaomi/bengal_defconfig vendor/xiaomi/sm6115.config
+TARGET_KERNEL_CLANG_COMPILE := true
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+#TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
+TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm6115-common/BoardConfigVendor.mk
