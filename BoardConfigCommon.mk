@@ -91,5 +91,9 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := bengal
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm6115-common/BoardConfigVendor.mk
