@@ -130,6 +130,11 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
     
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.1.vendor
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.bengal
