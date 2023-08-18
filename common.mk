@@ -10,6 +10,14 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
+# Inherit configuration files
+$(call inherit-product, device/xiaomi/sm6115-common/configs/configs.mk)
+
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong \
+    com.dsi.ant@1.0.vendor
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
