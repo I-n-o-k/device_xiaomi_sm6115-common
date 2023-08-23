@@ -347,3 +347,4 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm6115-common/sm6115-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sm6115-common-perf/sm6115-common-perf-vendor.mk)

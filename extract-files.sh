@@ -63,6 +63,11 @@ if [ -z "${ONLY_TARGET}" ]; then
     setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+
+    # Initialize the helper for common-perf device
+    setup_vendor "${DEVICE_COMMON}-perf" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
+
+    extract "${MY_DIR}/proprietary-files-perf.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then

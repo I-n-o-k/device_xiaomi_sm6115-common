@@ -33,6 +33,18 @@ write_makefiles "${MY_DIR}/proprietary-files.txt" true
 # Finish
 write_footers
 
+# Initialize the helper for common-perf
+setup_vendor "${DEVICE_COMMON}-perf" "${VENDOR}" "${ANDROID_ROOT}" true
+
+# Warning headers and guards
+write_headers "lime pamelo lemon citrus"
+
+# The standard common blobs
+write_makefiles "${MY_DIR}/proprietary-files-perf.txt" true
+
+# Finish
+write_footers
+
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
     setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false

@@ -193,3 +193,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
 include vendor/xiaomi/sm6115-common/BoardConfigVendor.mk
+include vendor/xiaomi/sm6115-common-perf/BoardConfigVendor.mk
