@@ -134,7 +134,6 @@ TARGET_BOARD_PLATFORM := bengal
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
 
 # Properties
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/properties/product.prop
