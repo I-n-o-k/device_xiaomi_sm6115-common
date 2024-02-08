@@ -61,7 +61,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/manifest/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
