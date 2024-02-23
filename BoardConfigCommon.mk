@@ -60,7 +60,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/manifest/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/manifest/compatibility_matrix.xml
 
@@ -193,4 +192,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
 include vendor/xiaomi/sm6115-common/BoardConfigVendor.mk
-include vendor/xiaomi/sm6115-common-perf/BoardConfigVendor.mk
