@@ -13,6 +13,9 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 # Inherit configuration files
 $(call inherit-product, device/xiaomi/sm6115-configs/configs.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
