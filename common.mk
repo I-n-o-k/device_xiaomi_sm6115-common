@@ -348,6 +348,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink \
+    firmware_wlan_mac.bin_symlink
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm6115-common/sm6115-common-vendor.mk)
 $(call inherit-product, vendor/xiaomi/sm6115-common-perf/sm6115-common-perf-vendor.mk)
