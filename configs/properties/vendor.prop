@@ -168,6 +168,7 @@ vendor.display.idle_time=0
 vendor.display.normal_noc_efficiency_factor=0.85
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
+ro.config.avoid_gfx_accel=true
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
